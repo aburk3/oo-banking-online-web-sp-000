@@ -7,4 +7,9 @@ class Transfer
     @amount = transfer_amount
     @status = "pending"
   end
+
+  def self.valid?
+    self.balance > 0 && self.status == "open"
+  end
+
 end
