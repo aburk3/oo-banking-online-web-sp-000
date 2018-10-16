@@ -8,8 +8,8 @@ class Transfer
     @status = "pending"
   end
 
-  def self.valid?
-    self.balance > 0 && self.status == "open"
+  def valid?
+    sender.valid? && receiver.valid?
   end
 
 end
