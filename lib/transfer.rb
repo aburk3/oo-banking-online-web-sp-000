@@ -37,5 +37,4 @@ class Transfer
       self.status = "reversed"
     end
   end
-
 end
